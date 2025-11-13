@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
         <div className="hidden md:block" />
         <div
           onClick={() => onNavigate('portfolio')}
-          className="text-center text-5xl md:text-6xl font-patrickHand tracking-wider text-gray-900 justify-self-center md:justify-self-auto cursor-pointer hover:text-gray-700 transition-colors"
+          className="text-center text-5xl md:text-6xl font-patrickHand tracking-normal text-gray-900 justify-self-center md:justify-self-auto cursor-pointer hover:text-gray-700 transition-colors"
           role="button"
           aria-label="Back to portfolio"
         >

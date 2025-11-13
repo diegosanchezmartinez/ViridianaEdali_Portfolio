@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import ImageCard from './ImageCard';
 import { portfolioItems } from '../data/portfolioData';
 
-const DESKTOP_GAP = 32;
-const MOBILE_GAP = 16;
+const DESKTOP_GAP = 8;
+const MOBILE_GAP = 4;
 const IDEAL_ROW_HEIGHT = 300;
 
 interface Row {
