@@ -1,5 +1,4 @@
 import React from 'react';
-import { GithubIcon, LinkedinIcon, TwitterIcon } from './icons';
 import { View } from '../App';
 
 interface HeaderProps {
@@ -14,26 +13,26 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
         <div className="hidden md:block" />
         <div
           onClick={() => onNavigate('portfolio')}
-          className="text-center text-5xl md:text-6xl font-patrickHand tracking-normal text-gray-900 justify-self-center md:justify-self-auto cursor-pointer hover:text-gray-700 transition-colors"
+          className="text-center text-5xl md:text-6xl font-outfit font-bold tracking-tight text-gray-900 justify-self-center md:justify-self-auto cursor-pointer hover:text-gray-700 transition-colors"
           role="button"
           aria-label="Back to portfolio"
         >
           Viridiana Edali
         </div>
         <nav className="flex items-center space-x-4 md:space-x-6 justify-self-center md:justify-self-end">
-          <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
-            <GithubIcon className="w-6 h-6" />
+          <a href="https://instagram.com/viridianaedali/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <i className="fa-brands fa-instagram text-2xl"></i>
           </a>
-          <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
-            <LinkedinIcon className="w-6 h-6" />
+          <a href="https://www.artstation.com/viridianagarcia" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <i className="fa-brands fa-artstation text-2xl"></i>
           </a>
-          <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
-            <TwitterIcon className="w-6 h-6" />
+          <a href="https://www.linkedin.com/in/viridianaedali/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <i className="fa-brands fa-linkedin text-2xl"></i>
           </a>
           <button
             type="button"
             onClick={() => onNavigate('links')}
-            className="text-base font-medium text-gray-600 hover:text-gray-900 transition-colors border-l border-gray-300 pl-4 md:pl-6"
+            className="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors border-l border-gray-300 pl-4 md:pl-6 font-zilla"
           >
             Links
           </button>

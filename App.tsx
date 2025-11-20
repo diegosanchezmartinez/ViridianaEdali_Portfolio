@@ -49,7 +49,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen text-gray-800 antialiased">
       {view !== 'links' && <Header onNavigate={handleNavigate} />}
-      <main className="container mx-auto px-8 sm:px-16 py-12">
+      <main className={view === 'links' ? "" : "container mx-auto px-8 sm:px-16 py-12"}>
         {renderContent()}
       </main>
       <GoToTopButton />
